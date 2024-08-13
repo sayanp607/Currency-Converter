@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d4444;
+}
+.converter-container{
+    background-color: aliceblue;
+    border-radius: 7px;
+    box-shadow: red;
+    padding: 24px 30px;
+    text-align: center;
+}
+.converter-container h1{
+    font-size: 30px;
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 30px;
+}
+.converter-container .input-container{
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    margin-block: 20px;
+}
+/* .converter-container .input-container:focus-within{
+    border-color: #0056;
+} */
+.converter-container .input-container input{
+    width: 150px;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+.converter-container .arrow{
+    transform: rotate(90deg);
+    font-size: 45px;
+}
+.converter-container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/* Responsive Code  */
+@media screen and(max-width : 440px)  {
+    .converter-container{
+        width: 80%;
+        margin: 0  auto;
+    }
+    .converter-container h1{
+        font-size: 22px;
+    }
+    .converter-container .input-container{
+        border: none;
+    }
+    .converter-container .input-container input,.converter-container .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 5px;
+        width: 100%;
+    }
+}
